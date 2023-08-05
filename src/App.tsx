@@ -1,14 +1,13 @@
 import React from 'react';
-import RestaurantList from './component/RestaurantList';
+import LunchApp from './containers/LunchApp';
+import GlobalProvider from './containers/GlobalProvider';
 
-class App extends React.Component {
-    render() {
-        return (
-            <>
-                <RestaurantList />
-            </>
-        );
-    }
+function App() {
+    return (
+        <GlobalProvider>
+            <LunchApp/>
+        </GlobalProvider>
+    )
 }
 
 export default App;

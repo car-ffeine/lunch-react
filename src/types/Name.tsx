@@ -1,4 +1,4 @@
-class Category {
+class Name {
 
     private _value: String;
 
@@ -9,14 +9,14 @@ class Category {
 
 
     validateNameLength(value: string) {
-        if (value.length > 20) {
-            throw new Error("카테고리 이름이 너무 길어요")
+        if (value.length > 10) {
+            throw new Error("이름이 너무 길어요")
         }
     }
 
-    get value(): String {
-        return this._value;
+    get value(): string {
+        return this._value.toString();
     }
 }
 
-export default Category;
+export default Name;
