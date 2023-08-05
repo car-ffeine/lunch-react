@@ -9,7 +9,7 @@ class Distance {
 
 
     validateDistance(value: number) {
-        if (value > 5) {
+        if (value > 30) {
             throw new Error("거리가 너무 멀어요")
         }
     }

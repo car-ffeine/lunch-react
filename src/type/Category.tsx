@@ -9,7 +9,7 @@ class Category {
 
 
     validateNameLength(value: string) {
-        if (value.length > 5) {
+        if (value.length > 20) {
             throw new Error("카테고리 이름이 너무 길어요")
         }
     }
