@@ -3,11 +3,11 @@ import Category from "./Category";
 import Distance from "./Distance";
 
 export interface Restaurant {
-    "category": Category;
-    "name": Name;
-    "distance": Distance;
-    "description": string;
-    "favorite": boolean
+    category: Category;
+    name: Name;
+    distance: Distance;
+    description: string;
+    favorite: boolean
 }
 
 class LunchRestaurant implements Restaurant {
